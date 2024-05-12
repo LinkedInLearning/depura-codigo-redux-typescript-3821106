@@ -16,23 +16,10 @@ const FormularioProducto: React.FC = () => {
     const dispatch = useAppDispatch();
     const [producto, setProducto] = useState<Partial<Producto>>(estadoDefault);
 
-    const esProductoValido = (producto: Partial<Producto>): producto is Producto => {
-        return producto.id !== undefined &&
-        producto.nombre !== undefined && producto.nombre.length > 0 &&
-        producto.categoria !== undefined && producto.categoria.length > 0 &&
-        producto.precio !== undefined && producto.precio !== 0 &&
-        producto.cantidad !== undefined && producto.cantidad !== 0 &&
-        producto.descripcion !== undefined && producto.descripcion.length > 0;
-    }
-
     const handleAgregarProducto = () => {
-        const productoNuevo = { ...producto, id: Math.random()};
-        if(esProductoValido(productoNuevo)){
-            dispatch(agregarProducto(productoNuevo));
-            setProducto(estadoDefault);
-        } else {
-            alert('Información de producto incompleta');
-        }
+        const productoNuevo = { ...producto, id: Math.random() };
+        dispatch(agregarProducto(productoNuevo as Producto));
+        setProducto(estadoDefault);
     };
 
     // Función para manejar cambios en los campos del formulario

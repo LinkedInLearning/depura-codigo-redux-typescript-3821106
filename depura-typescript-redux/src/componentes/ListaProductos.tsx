@@ -19,7 +19,7 @@ const ListaProductos: React.FC = () => {
                     <li key={producto.id} className="list-group-item">
                         <div className="row text-end">
                             <div className="offset-10 col-2 text-end">
-                                <button type="button" className="btn btn-light" onClick={() => { dispatch(marcarProductoFavorito(producto.id)) }}>
+                                <button type="button" className="btn btn-light" onClick={() => { dispatch(marcarProductoFavorito(undefined as any)) }}>
                                     {producto.esFavorito ? <IconHeartFilled /> : <IconHeart />}
                                 </button>
                             </div>
