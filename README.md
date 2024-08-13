@@ -47,8 +47,8 @@ Este repositorio tiene dos ramas (branches). La rama `desafio` contiene la versi
 Echa un vistazo a mis otros cursos en [LinkedIn Learning](https://www.linkedin.com/learning/instructors/natalia-corea).
 
 [0]: # (Replace these placeholder URLs with actual course URLs)
-[lil-course-url]: https://www.linkedin.com
-[lil-thumbnail-url]: https:
+[lil-course-url]: https://www.linkedin.com/learning/depura-el-codigo-redux-y-typescript/
+[lil-thumbnail-url]: https://media.licdn.com/dms/image/v2/D4E0DAQEmTtJ5jKLd1g/learning-public-crop_675_1200/learning-public-crop_675_1200/0/1723554045624?e=2147483647&v=beta&t=1DCZJsTW6IR_ViTfFrl-i0y_C4ag-LLy4hHCf_BtRH8
 
 [1]: # (End of ES-Instruction ###############################################################################################)
 
